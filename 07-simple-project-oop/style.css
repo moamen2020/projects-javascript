@@ -1,0 +1,13 @@
+div {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+}
+
+#food {
+  background: #0f0;
+}
+
+#player {
+  background: #f00;
+}
