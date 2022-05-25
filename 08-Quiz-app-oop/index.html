@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App - JS OOP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="final">
+      <h2>you answered all questions</h2>
+      <p class="score"></p>
+      <h4>try again</h4>
+      <button id="again">again</button>
+    </div>
+
+    <div class="quiz">
+      <div class="count">
+        <p class="current">0</p>
+        <p>/</p>
+        <p class="total">10</p>
+      </div>
+
+      <h3 class="question"></h3>
+
+      <label id="a1" class="container"></label>
+      <label id="a2" class="container"></label>
+      <label id="a3" class="container"></label>
+      <label id="a4" class="container"></label>
+
+      <button id="next">Submit</button>
+    </div>
+
+    <div class="settings">
+      <h2>Quiz Setting</h2>
+      <label for="category">Select Category</label>
+      <select name="" id="category">
+        <option value="9">General Knowledge</option>
+        <option value="27">Animals</option>
+        <option value="23">History</option>
+        <option value="21">Sports</option>
+      </select>
+
+      <div>
+        <label for="difficulty">Difficulty</label>
+
+        <label for="easy">
+          <input type="radio" id="easy" />
+          Easy
+        </label>
+
+        <label for="medium"> <input type="radio" id="medium" /> Medium </label>
+
+        <label for="hard">
+          <input type="radio" id="hard" />
+          Hard
+        </label>
+      </div>
+
+      <div>
+        <label for="nQuestions">Number of Questions</label>
+        <input type="number" id="nQuestions" />
+      </div>
+
+      <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
